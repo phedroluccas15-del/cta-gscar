@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow"><!-- PRÉVIA: remover antes de ir ao ar de verdade -->
+<title>Curso de Ar-Condicionado Automotivo | CTA GS.Car Varginha</title>
+<meta name="description" content="Curso intensivo e 100% prático de Ar-Condicionado Automotivo em Varginha-MG. 6, 7 e 8 de novembro, máximo de 10 alunos, apostila e certificado inclusos. Aulas práticas dentro da oficina GS.Car, representante Bosch Car Service.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ====== CORES DA MARCA (troque aqui) ====== */
+  :root{
+    --navy:#0B1C30;--navy-2:#10263F;--navy-3:#163252;
+    --line:rgba(255,255,255,.09);
+    --text:#E8EEF6;--muted:#9FB0C6;
+    --accent:#FFB81C;--ice:#5CC8FF;
+    --wpp:#25D366;--wpp-dark:#1EBE5A;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--navy);color:var(--text);font-family:'Barlow',system-ui,sans-serif;font-size:17px;line-height:1.6;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  h1,h2,h3{font-family:'Barlow Condensed',sans-serif;line-height:1.05;letter-spacing:.3px;text-transform:uppercase}
+  .wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+  section{padding:96px 0;position:relative}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+  .eyebrow::before{content:"";width:28px;height:3px;background:var(--accent);border-radius:2px}
+  .title{font-size:clamp(34px,5vw,54px);margin-bottom:18px}
+  .title em{font-style:normal;color:var(--accent)}
+  .lead{color:var(--muted);font-size:clamp(17px,1.6vw,19px);max-width:640px}
+  .center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}.center .eyebrow::before{display:none}
+  .prose p{color:var(--muted);margin-bottom:16px;max-width:680px}
+  .prose p strong{color:var(--text)}
+  .alt{background:var(--navy-2);border-block:1px solid var(--line)}
+
+  /* marcador de conteúdo a confirmar/coletar: procure por class="ph" */
+  .ph{background:rgba(255,184,28,.12);color:var(--accent);border:1px dashed var(--accent);border-radius:6px;padding:0 6px;font-style:normal}
+  .ph-box{border:2px dashed rgba(255,184,28,.5);background:rgba(255,184,28,.05);border-radius:var(--radius);display:grid;place-items:center;text-align:center;color:var(--accent);padding:24px;font-weight:600;font-size:15px}
+
+  /* ====== BOTÕES ====== */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:17px;padding:18px 30px;border-radius:12px;transition:transform .2s,box-shadow .2s,background .2s;cursor:pointer;border:0;text-transform:uppercase;letter-spacing:.5px}
+  .btn svg{width:22px;height:22px;flex-shrink:0}
+  .btn-wpp{background:var(--wpp);color:#fff;box-shadow:0 12px 32px -10px rgba(37,211,102,.6)}
+  .btn-wpp:hover{background:var(--wpp-dark);transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(37,211,102,.75)}
+  .btn-lg{font-size:20px;padding:22px 40px}
+  .micro{color:var(--muted);font-size:14.5px;margin-top:12px}
+  .cta-row{margin-top:36px}
+
+  /* ====== BARRA DO TOPO ====== */
+  .topbar{background:var(--accent);color:var(--navy);text-align:center;font-weight:700;font-size:14.5px;padding:9px 16px;position:relative;z-index:51}
+  .topbar b{font-weight:800}
+  .topbar span{white-space:nowrap}
+
+  /* ====== HEADER ====== */
+  header{position:sticky;top:0;z-index:50;background:rgba(11,28,48,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:88px}
+  .nav img{height:60px;width:auto}
+  .nav ul{display:flex;gap:30px;list-style:none;font-weight:600;font-size:15px}
+  .nav ul a{color:var(--muted);transition:color .2s}.nav ul a:hover{color:var(--text)}
+  .nav .btn{padding:11px 18px;font-size:14px}
+  @media(max-width:900px){.nav ul{display:none}}
+
+  /* ====== HERO ====== */
+  .hero{padding:90px 0 100px;overflow:hidden;background:var(--navy)}
+  .hero-bg{position:absolute;inset:0;background:url(img/oficina.jpg) center/cover;opacity:.22}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 30%,rgba(11,28,48,.7) 70%,rgba(11,28,48,.45)),linear-gradient(0deg,var(--navy),transparent 40%);z-index:1}
+  .hero .wrap{position:relative;z-index:2}
+  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+  .selo{display:inline-flex;align-items:center;gap:10px;background:rgba(92,200,255,.1);border:1px solid rgba(92,200,255,.35);color:var(--ice);padding:8px 16px;border-radius:99px;font-size:13.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:24px}
+  .selo svg{width:16px;height:16px}
+  .hero h1{font-size:clamp(44px,6.8vw,82px);font-weight:800;margin-bottom:22px}
+  .hero h1 span{color:var(--accent)}
+  .hero .lead{margin-bottom:30px}
+  .hero .lead strong{color:var(--text)}
+  .checks{list-style:none;display:flex;flex-wrap:wrap;gap:10px 22px;margin-bottom:34px;font-weight:600}
+  .checks li{display:flex;align-items:center;gap:8px}
+  .checks svg{width:20px;height:20px;color:var(--wpp)}
+  .hero-card{background:linear-gradient(160deg,var(--navy-3),var(--navy-2));border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+  .hero-card small{display:block;color:var(--muted);font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+  .hero-card h3{font-size:28px;margin-bottom:18px}
+  .count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px}
+  .count div{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:10px;padding:12px 4px;text-align:center}
+  .count b{display:block;font-family:'Barlow Condensed';font-size:34px;line-height:1;color:var(--accent)}
+  .count span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+  .seats{margin-bottom:22px;padding:14px 16px;border-radius:12px;background:rgba(255,184,28,.08);border:1px solid rgba(255,184,28,.25);font-size:15px;display:flex;justify-content:space-between}
+  .seats b{color:var(--accent)}
+  .bar{height:10px;border-radius:99px;background:rgba(255,255,255,.08);overflow:hidden;margin-bottom:22px}
+  .bar i{display:block;height:100%;width:var(--fill,70%);background:linear-gradient(90deg,var(--accent),#FF8A00);border-radius:99px}
+  .hero-card .btn{width:100%}
+  @media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:44px}}
+
+  /* ====== FAIXA DE CREDIBILIDADE ====== */
+  .cred{padding:0;margin-top:-40px;z-index:3}
+  .cred .wrap{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--radius);background:var(--navy-2);overflow:hidden;position:relative;z-index:3}
+  .cred div{padding:28px 24px;border-right:1px solid var(--line)}
+  .cred div:last-child{border-right:0}
+  .cred strong{display:block;font-family:'Barlow Condensed';font-size:34px;line-height:1.05;color:var(--accent);margin-bottom:6px;text-transform:uppercase}
+  .cred p{color:var(--muted);font-size:15px;line-height:1.4}
+  @media(max-width:760px){.cred strong{font-size:26px}.cred div{padding:22px 18px}.cred .wrap{grid-template-columns:1fr 1fr}.cred div:nth-child(2){border-right:0}.cred div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+  /* ====== OPORTUNIDADE ====== */
+  .opp-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .quote-big{border-left:4px solid var(--accent);padding:6px 0 6px 24px;font-family:'Barlow Condensed';font-size:clamp(26px,3vw,34px);text-transform:uppercase;line-height:1.15;font-weight:700;margin-top:28px}
+  .opp-img{border-radius:20px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3}
+  .opp-img img{width:100%;height:100%;object-fit:cover}
+  @media(max-width:900px){.opp-grid{grid-template-columns:1fr;gap:40px}}
+
+  /* ====== VÍDEO ====== */
+  .video-box{max-width:380px;margin:44px auto 0;aspect-ratio:9/16;border-radius:20px;overflow:hidden;position:relative;border:1px solid var(--line);background:#000;box-shadow:0 40px 80px -30px rgba(0,0,0,.7)}
+  .video-box video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .video-ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;background:linear-gradient(rgba(11,28,48,.72),rgba(11,28,48,.85)),url(img/sala-de-aula-1.jpg) center/cover}
+  .play{width:92px;height:92px;border-radius:50%;background:var(--accent);display:grid;place-items:center;margin:0 auto 18px;box-shadow:0 0 0 14px rgba(255,184,28,.18)}
+  .play svg{width:34px;height:34px;color:var(--navy);margin-left:5px}
+  @media(max-width:600px){.video-box{max-width:320px}}
+
+  /* ====== MÓDULOS ====== */
+  .mods{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
+  .mod{background:var(--navy);border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:grid;grid-template-columns:auto 1fr;gap:20px;transition:border-color .25s,transform .25s}
+  .mod:hover{border-color:rgba(255,184,28,.4);transform:translateY(-3px)}
+  .mod .n{font-family:'Barlow Condensed';font-weight:800;font-size:46px;line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--accent)}
+  .mod h3{font-size:24px;margin-bottom:8px}
+  .mod p{color:var(--muted);font-size:15.5px}
+  .diff{margin-top:18px;display:flex;gap:18px;align-items:center;background:linear-gradient(135deg,rgba(255,184,28,.16),rgba(255,184,28,.04));border:1px solid rgba(255,184,28,.35);border-radius:var(--radius);padding:24px 28px;font-size:18px}
+  .diff svg{width:36px;height:36px;color:var(--accent);flex-shrink:0}
+  .diff b{color:var(--accent)}
+  @media(max-width:760px){.mods{grid-template-columns:1fr}.mod{padding:24px}}
+
+  /* ====== PRA QUEM É ====== */
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+  .card{background:var(--navy-2);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;transition:transform .25s,border-color .25s}
+  .card:hover{transform:translateY(-4px);border-color:rgba(255,184,28,.4)}
+  .ico{width:52px;height:52px;border-radius:12px;background:rgba(255,184,28,.1);display:grid;place-items:center;margin-bottom:18px}
+  .ico svg{width:26px;height:26px;color:var(--accent)}
+  .card h3{font-size:22px;margin-bottom:8px}
+  .card p{color:var(--muted);font-size:15.5px}
+  @media(max-width:960px){.cards{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.cards{grid-template-columns:1fr}}
+
+  /* ====== SOBRE O CTA ====== */
+  .about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:12px}
+  .gallery figure{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .gallery figure:first-child{grid-column:span 2;aspect-ratio:16/9}
+  .gallery figure:not(:first-child){aspect-ratio:1}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .gallery figure:hover img{transform:scale(1.04)}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;font-size:13.5px;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+  @media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}}
+
+  /* ====== PROVA SOCIAL ====== */
+  .impact{margin-top:44px;text-align:center;background:var(--navy);border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px}
+  .impact strong{display:block;font-family:'Barlow Condensed';font-size:clamp(30px,4.2vw,46px);line-height:1.05;color:var(--accent);text-transform:uppercase;margin-bottom:8px}
+  .impact span{color:var(--muted);font-weight:600}
+  .grad{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0 36px}
+  .grad figure{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .grad img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;transition:transform .5s}
+  .grad figure:hover img{transform:scale(1.04)}
+  .grad .g-wide{grid-column:span 2}
+  .grad .g-wide img{aspect-ratio:3/2}
+  .grad figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 12px;font-size:14px;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+  .depo{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+  .depo article{background:var(--navy);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:18px}
+  .stars{color:var(--accent);letter-spacing:3px;font-size:18px}
+  .depo blockquote{font-size:17px;line-height:1.55;flex:1}
+  .who{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+  .avatar{width:48px;height:48px;border-radius:50%;background:rgba(255,184,28,.14);border:1px solid rgba(255,184,28,.4);display:grid;place-items:center;color:var(--accent);font-family:'Barlow Condensed';font-size:18px;font-weight:700;flex-shrink:0}
+  .who b{display:block;font-size:16px}
+  .who span{color:var(--muted);font-size:14px}
+  @media(max-width:860px){.depo{grid-template-columns:1fr}.grad{grid-template-columns:1fr 1fr;gap:10px}}
+
+  /* ====== OFERTA ====== */
+  .offer{max-width:980px;margin:48px auto 0;display:grid;grid-template-columns:1.1fr .9fr;border-radius:24px;overflow:hidden;border:1px solid rgba(255,184,28,.35);box-shadow:0 40px 90px -40px rgba(255,184,28,.35)}
+  .offer-l{background:var(--navy-2);padding:40px}
+  .offer-l h3{font-size:26px;margin-bottom:20px}
+  .stack{list-style:none;display:grid;gap:14px;margin-bottom:28px}
+  .stack li{display:flex;gap:12px;align-items:flex-start}
+  .stack svg{width:22px;height:22px;color:var(--wpp);flex-shrink:0;margin-top:2px}
+  .when{border-top:1px solid var(--line);padding-top:22px;display:grid;gap:12px;font-size:15.5px}
+  .when div{display:flex;gap:12px}
+  .when svg{width:20px;height:20px;color:var(--accent);flex-shrink:0;margin-top:3px}
+  .when span{color:var(--muted)}
+  .offer-r{background:linear-gradient(160deg,var(--navy-3),#0d2238);padding:40px;display:flex;flex-direction:column;justify-content:center;text-align:center;border-left:1px solid var(--line)}
+  .offer-r .from{color:var(--muted);font-size:15px;margin-bottom:6px}
+  .offer-r .price{font-family:'Barlow Condensed';font-weight:800;line-height:1;font-size:clamp(54px,7vw,74px);color:var(--text)}
+  .offer-r .price small{font-size:.45em;color:var(--muted);vertical-align:middle;margin-right:4px}
+  .offer-r .cash{margin:12px 0 4px;font-size:18px}
+  .offer-r .cash b{color:var(--accent)}
+  .offer-r .total{color:var(--muted);font-size:13.5px;margin-bottom:24px}
+  .anchor{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:15px;text-align:left}
+  .offer-r .btn{width:100%}
+  .lock{font-size:14px;color:var(--accent);margin-top:14px;font-weight:600}
+  @media(max-width:860px){.offer{grid-template-columns:1fr}.offer-r{border-left:0;border-top:1px solid var(--line)}.offer-l,.offer-r{padding:30px 22px}}
+
+  /* ====== FAQ ====== */
+  .faq{max-width:820px;margin:48px auto 0}
+  details{border-bottom:1px solid var(--line)}
+  summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-weight:600;font-size:19px;position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:30px;font-weight:400;color:var(--accent);transition:transform .25s}
+  details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+  details p{color:var(--muted);padding:0 0 22px;max-width:700px}
+
+  /* ====== CTA FINAL ====== */
+  .final{padding:0 0 96px}
+  .final-box{position:relative;overflow:hidden;border-radius:26px;padding:72px 44px;text-align:center;background:linear-gradient(135deg,#FFB81C,#FF9500)}
+  .final-box h2{color:var(--navy);font-size:clamp(36px,5.5vw,62px);margin-bottom:18px;position:relative}
+  .final-box p{color:rgba(11,28,48,.85);font-size:19px;max-width:600px;margin:0 auto 12px;font-weight:500;position:relative}
+  .final-box p.q{font-weight:800;font-size:22px;margin-bottom:32px}
+  .final-box .btn{position:relative}
+  .final-box .tag{color:rgba(11,28,48,.7);font-size:14px;margin-top:24px;font-style:italic;position:relative}
+  .gear-deco{position:absolute;width:340px;height:340px;opacity:.12;color:var(--navy);animation:spin 40s linear infinite}
+  .g1{left:-110px;top:-110px}.g2{right:-120px;bottom:-140px;animation-direction:reverse}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @media(max-width:560px){.final-box{padding:56px 22px}}
+
+  /* ====== FOOTER ====== */
+  footer{border-top:1px solid var(--line);padding:40px 0 90px;color:var(--muted);font-size:14.5px}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  footer img{height:54px}
+  footer a:hover{color:var(--accent)}
+
+  /* ====== WHATSAPP FLUTUANTE ====== */
+  .wpp-float{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--wpp);display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s}
+  .wpp-float:hover{transform:scale(1.08)}
+  .wpp-float svg{width:32px;height:32px;color:#fff}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  .hero-grid>*,.opp-grid>*,.about-grid>*,.offer>*{min-width:0}
+  @media(max-width:480px){.nav .btn{width:auto;padding:10px 14px;font-size:13px}.nav img{height:44px}.nav{height:76px}.btn{width:100%;padding:18px 20px;font-size:16px}.btn-lg{font-size:17px}.topbar{font-size:13px}.hero-card{padding:24px 20px}.diff{flex-direction:column;align-items:flex-start;padding:22px}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="i-wpp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.480s1.070 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.44-9.44a9.38 9.38 0 0 1 9.43 9.45c0 5.2-4.23 9.43-9.44 9.43M20.1 3.9A11.3 11.3 0 0 0 12.05.57C5.77.57.66 5.68.66 11.960c0 2 .52 3.96 1.52 5.69L.57 23.43l5.9-1.55a11.4 11.4 0 0 0 5.44 1.39h.01c6.27 0 11.39-5.11 11.39-11.4 0-3.04-1.18-5.9-3.33-8.05"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-snow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07 19.07 4.93M9 4l3 3 3-3M9 20l3-3 3 3M4 9l3 3-3 3M20 9l-3 3 3 3"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11V6a2 2 0 0 0-4 0M14 10V4a2 2 0 0 0-4 0v2M10 10.5V6a2 2 0 0 0-4 0v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76Z"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.130-.09-2.91a2.18 2.18 0 0 0-2.91-.09ZM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4M2 7h20v3a2 2 0 0 1-2 2 2.7 2.7 0 0 1-2-1 2.7 2.7 0 0 1-4 0 2.7 2.7 0 0 1-4 0 2.7 2.7 0 0 1-4 0 2.7 2.7 0 0 1-2 1 2 2 0 0 1-2-2V7"/></symbol>
+    <symbol id="i-grad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M6 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L7.5 3.64A1 1 0 0 0 6 4.5Z"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 200 200"><circle cx="100" cy="100" r="78" fill="none" stroke="currentColor" stroke-width="26" stroke-dasharray="20.4 20.4"/><circle cx="100" cy="100" r="66" fill="none" stroke="currentColor" stroke-width="10"/><circle cx="100" cy="100" r="26" fill="none" stroke="currentColor" stroke-width="10"/></symbol>
+  </defs>
+</svg>
+
+<!-- 0. BARRA DO TOPO -->
+<div class="topbar"><span>🔥 <b>NOVA TURMA ABERTA</b> ·</span> <span>6 A 8 DE NOVEMBRO ·</span> <span>APENAS 10 VAGAS!</span></div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" aria-label="CTA GS.Car"><img src="img/logo-branco.png" alt="CTA GS.Car"></a>
+    <ul>
+      <li><a href="#curso">O curso</a></li>
+      <li><a href="#conteudo">Conteúdo</a></li>
+      <li><a href="#cta">Sobre o CTA</a></li>
+      <li><a href="#investimento">Investimento</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+    </ul>
+    <!-- BOTÃO WHATSAPP: menu -->
+    <a class="btn btn-wpp js-wpp" href="#"><svg><use href="#i-wpp"/></svg>Quero minha vaga</a>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="selo"><svg><use href="#i-snow"/></svg>Curso de Ar-Condicionado Automotivo · Varginha-MG</div>
+      <h1>Aprenda mecânica <span>dentro de uma oficina de verdade.</span></h1>
+      <p class="lead">Em um fim de semana intensivo e 100% prático, você aprende a diagnosticar, fazer vácuo e recarregar o sistema, <strong>com as suas mãos, num veículo real</strong>, dentro de uma oficina Bosch Car Service.</p>
+      <ul class="checks">
+        <li><svg><use href="#i-check"/></svg>3 dias · 6, 7 e 8 de novembro</li>
+        <li><svg><use href="#i-check"/></svg>Máximo de 10 alunos</li>
+        <li><svg><use href="#i-check"/></svg>Apostila + certificado</li>
+      </ul>
+      <!-- BOTÃO WHATSAPP #1 -->
+      <a class="btn btn-wpp btn-lg js-wpp" href="#"><svg><use href="#i-wpp"/></svg>Quero garantir minha vaga</a>
+      <p class="micro">Você fala direto com a equipe do CTA. Sem compromisso.</p>
+    </div>
+
+    <aside class="hero-card">
+      <small>Próxima turma começa em</small>
+      <h3>6 de novembro · sexta, 19:00</h3>
+      <div class="count" id="count">
+        <div><b data-u="d">--</b><span>dias</span></div>
+        <div><b data-u="h">--</b><span>horas</span></div>
+        <div><b data-u="m">--</b><span>min</span></div>
+        <div><b data-u="s">--</b><span>seg</span></div>
+      </div>
+      <div class="seats"><span>Vagas</span><b>Apenas 10 por turma</b></div>
+      <a class="btn btn-wpp js-wpp" href="#"><svg><use href="#i-wpp"/></svg>Reservar pelo WhatsApp</a>
+    </aside>
+  </div>
+</section>
+
+<!-- 2. FAIXA DE CREDIBILIDADE -->
+<section class="cred">
+  <div class="wrap reveal">
+    <div><strong>Até 10 alunos</strong><p>por turma</p></div>
+    <div><strong>Oficina real</strong><p>aulas dentro da oficina GS.Car</p></div>
+    <div><strong>100% prático</strong><p>bancada e veículo real</p></div>
+    <div><strong>Certificado</strong><p>de conclusão + apostila</p></div>
+  </div>
+</section>
+
+<!-- 3. A OPORTUNIDADE -->
+<section>
+  <div class="wrap opp-grid">
+    <div class="reveal">
+      <span class="eyebrow">A oportunidade</span>
+      <h2 class="title">Se a sua oficina ainda não conserta ar-condicionado, <em>está deixando dinheiro na mesa.</em></h2>
+      <div class="prose">
+        <p>Pensa com a gente: a maioria dos carros que entram numa oficina hoje tem ar-condicionado. E, cedo ou tarde, ele para de gelar.</p>
+        <p>Quando isso acontece, o cliente não quer saber. Ele quer resolver. E vai pagar bem para quem souber fazer.</p>
+        <p>O problema é que muita oficina ainda manda esse serviço para fora, ou pior: "chuta" o diagnóstico, completa o gás e torce para dar certo. <strong>O carro volta. O cliente não.</strong></p>
+      </div>
+      <p class="quote-big">Um serviço de alto valor, com demanda o ano inteiro, que pouca gente na região sabe fazer direito.</p>
+    </div>
+    <div class="opp-img reveal"><img src="img/oficina.jpg" alt="Oficina GS.Car com carros em manutenção" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- 4. VÍDEO -->
+<section class="alt" id="curso">
+  <div class="wrap center">
+    <div class="reveal">
+      <span class="eyebrow">Por dentro do curso</span>
+      <h2 class="title">Veja tudo o que você <em>vai aprender no curso</em></h2>
+    </div>
+    <div class="video-box reveal">
+      <!-- VÍDEO: video/curso-cta.mp4 (convertido do IMG_2191.MOV). Capa: video/capa-curso-cta.jpg -->
+      <video src="video/curso-cta.mp4" poster="video/capa-curso-cta.jpg" controls playsinline preload="metadata"></video>
+    </div>
+    <div class="cta-row reveal">
+      <!-- BOTÃO WHATSAPP #2 -->
+      <a class="btn btn-wpp js-wpp" href="#"><svg><use href="#i-wpp"/></svg>Quero estar na turma de novembro</a>
+    </div>
+  </div>
+</section>
+
+<!-- 5 + 6. O CURSO / CONTEÚDO -->
+<section id="conteudo">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">O curso</span>
+      <h2 class="title">Do zero ao serviço completo <em>em um fim de semana.</em></h2>
+      <p class="lead">Nada de ficar só olhando slide. No CTA, a sala de aula fica dentro da oficina: bancada, ferramentas profissionais e <strong style="color:var(--text)">veículo real</strong>.</p>
+    </div>
+    <div class="mods">
+      <div class="mod reveal"><span class="n">01</span><div><h3>Elétrica e diagnóstico do sistema</h3><p>Entenda a parte elétrica do ar-condicionado e descubra onde está o defeito antes de trocar qualquer peça.</p></div></div>
+      <div class="mod reveal"><span class="n">02</span><div><h3>Ciclo de refrigeração e componentes</h3><p>Compressor, condensador, válvula de expansão e evaporador: o que cada um faz e como identificar quando algum deles falha.</p></div></div>
+      <div class="mod reveal"><span class="n">03</span><div><h3>Leitura de manômetro e diagnóstico por pressão</h3><p>Aprenda a "ler" o sistema pelas pressões e chegue ao diagnóstico certo, sem achismo.</p></div></div>
+      <div class="mod reveal"><span class="n">04</span><div><h3>Vácuo, estanqueidade e recarga completa</h3><p>O procedimento correto, passo a passo, para entregar o serviço bem feito e o carro gelando de verdade.</p></div></div>
+    </div>
+    <div class="diff reveal"><svg><use href="#i-hand"/></svg><p><b>O que faz toda a diferença:</b> cada aluno executa o processo completo, do diagnóstico à recarga. Você não fica só olhando. <b>Você faz.</b></p></div>
+  </div>
+</section>
+
+<!-- 7. PARA QUEM É -->
+<section class="alt">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Para quem é</span>
+      <h2 class="title">Este curso é para você que…</h2>
+    </div>
+    <div class="cards">
+      <div class="card reveal"><div class="ico"><svg><use href="#i-wrench"/></svg></div><h3>Já é mecânico</h3><p>E quer parar de recusar serviço de ar-condicionado, ou de mandar para fora.</p></div>
+      <div class="card reveal"><div class="ico"><svg><use href="#i-rocket"/></svg></div><h3>Quer entrar no mercado</h3><p>Com uma especialização de alto valor, muito procurada pelas oficinas.</p></div>
+      <div class="card reveal"><div class="ico"><svg><use href="#i-store"/></svg></div><h3>Tem oficina</h3><p>E quer oferecer um serviço novo, com demanda o ano inteiro.</p></div>
+      <div class="card reveal"><div class="ico"><svg><use href="#i-grad"/></svg></div><h3>É estudante da área</h3><p>E quer a prática em oficina para complementar a teoria.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. QUEM ENSINA -->
+<section id="cta">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">Sobre o CTA</span>
+      <h2 class="title">Onde a teoria <em>vira prática</em></h2>
+      <div class="prose">
+        <p>O <strong>CTA GS.Car</strong> é um centro de treinamento automotivo criado em Varginha para formar profissionais preparados para o mercado. As aulas acontecem dentro da <strong>oficina GS.Car, representante oficial da Bosch Car Service</strong>, que está no mercado há mais de 30 anos.</p>
+        <p>O CTA nasceu de um problema que se vê todo dia no setor: <strong>falta profissional que chega pronto</strong>, com prática de verdade. Os cursos ensinam teoria, mas raramente colocam o aluno numa oficina, com carro real na rampa.</p>
+        <p>Por isso, aqui é diferente: <strong>o aluno aprende com carro real e ferramentas profissionais</strong>, em turmas pequenas de propósito, para que todos pratiquem.</p>
+      </div>
+    </div>
+    <div class="gallery reveal">
+      <figure><img src="img/sala-de-aula-1.jpg" alt="Sala de aula do CTA com bancada e motor" loading="lazy"><figcaption>Sala de aula com bancada e motor</figcaption></figure>
+      <figure><img src="img/oficina.jpg" alt="Oficina GS.Car" loading="lazy"><figcaption>A oficina onde você pratica</figcaption></figure>
+      <figure><img src="img/fachada.jpg" alt="Fachada GS.Car Bosch Car Service" loading="lazy"><figcaption>GS.Car · Bom Pastor, Varginha</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 9. PROVA SOCIAL -->
+<section class="alt">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Nossos alunos</span>
+      <h2 class="title">Quem aprende aqui, <em>sai fazendo.</em></h2>
+      <p class="lead">Veja alguns momentos das nossas turmas e o que os alunos contam depois do curso.</p>
+    </div>
+
+    <div class="impact reveal"><strong>Mão na massa do início ao fim</strong><span>Diagnóstico, vácuo e recarga: cada aluno faz tudo na prática</span></div>
+
+    <!-- FOTOS DA FORMATURA (álbum Lightroom "GS CAR FORMATURA II"; todas em img/formatura-originais/) -->
+    <div class="grad reveal">
+      <figure class="g-wide"><img src="img/turma-formada.jpg" alt="Turma formada em frente à oficina GS.Car" loading="lazy"><figcaption>Turma formada</figcaption></figure>
+      <figure class="g-wide"><img src="img/entrega-certificado.jpg" alt="Entrega de certificado a um aluno" loading="lazy"><figcaption>Entrega de certificado</figcaption></figure>
+      <figure><img src="img/aluno-certificado-1.jpg" alt="Aluno com o certificado do CTA GS.Car" loading="lazy"></figure>
+      <figure><img src="img/aluno-certificado-2.jpg" alt="Aluno com o certificado do CTA GS.Car" loading="lazy"></figure>
+      <figure><img src="img/aluno-certificado-3.jpg" alt="Aluno com o certificado do CTA GS.Car" loading="lazy"></figure>
+      <figure><img src="img/aluno-certificado-4.jpg" alt="Aluno com o certificado do CTA GS.Car" loading="lazy"></figure>
+    </div>
+
+    <!-- DEPOIMENTOS DE EXEMPLO (apresentação para o dono): nomes e textos FICTÍCIOS. ANTES DE PUBLICAR: trocar por depoimentos REAIS de alunos -->
+    <div class="depo">
+      <article class="reveal"><div class="stars">★★★★★</div><blockquote>"Eu mandava todo serviço de ar-condicionado pra fora. Depois do curso, já fiz diagnóstico e recarga sozinho na minha oficina. Muita prática e zero enrolação."</blockquote><div class="who"><div><b>Roger Almeida</b><span>Turma de Ar-Condicionado</span></div></div></article>
+      <article class="reveal"><div class="stars">★★★★★</div><blockquote>"O instrutor tem muita paciência e explica cada detalhe. Quando alguém tinha dúvida, ele parava, mostrava no carro e só seguia quando todo mundo entendia."</blockquote><div class="who"><div><b>Rafael Gonçalves</b><span>Turma de Ar-Condicionado</span></div></div></article>
+      <article class="reveal"><div class="stars">★★★★★</div><blockquote>"O que mais me surpreendeu foi a estrutura. Manômetro, bomba de vácuo, equipamento de recarga: tudo profissional, e cada aluno teve a oportunidade de fazer na prática."</blockquote><div class="who"><div><b>Marcelo Labre</b><span>Turma de Ar-Condicionado</span></div></div></article>
+    </div>
+
+    <div class="center cta-row reveal">
+      <!-- BOTÃO WHATSAPP #3 -->
+      <a class="btn btn-wpp js-wpp" href="#"><svg><use href="#i-wpp"/></svg>Quero ser o próximo</a>
+    </div>
+  </div>
+</section>
+
+<!-- 10. OFERTA -->
+<section id="investimento">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Investimento</span>
+      <h2 class="title">Tudo o que você recebe</h2>
+    </div>
+    <div class="offer reveal">
+      <div class="offer-l">
+        <h3>Curso de Ar-Condicionado Automotivo</h3>
+        <ul class="stack">
+          <li><svg><use href="#i-check"/></svg>3 dias de treinamento intensivo e 100% prático</li>
+          <li><svg><use href="#i-check"/></svg>Prática em veículo real, com bancada e ferramentas profissionais</li>
+          <li><svg><use href="#i-check"/></svg>Você executa o processo completo, do diagnóstico à recarga</li>
+          <li><svg><use href="#i-check"/></svg>Turma de no máximo 10 alunos</li>
+          <li><svg><use href="#i-check"/></svg>Apostila completa</li>
+          <li><svg><use href="#i-check"/></svg>Certificado de conclusão</li>
+        </ul>
+        <div class="when">
+          <div><svg><use href="#i-cal"/></svg><p><b>6, 7 e 8 de novembro</b></p></div>
+          <div><svg><use href="#i-clock"/></svg><p>Sexta: 19:00 às 22:00<br><span>Sábado e domingo: 08:00 às 17:00</span></p></div>
+          <div><svg><use href="#i-pin"/></svg><p>Oficina GS.Car<br><span>R. Álvaro Mendes, 165 · Bom Pastor, Varginha-MG</span></p></div>
+        </div>
+      </div>
+      <div class="offer-r">
+        <p class="from">Investimento</p>
+        <div class="price"><small>6x de</small>R$ 331,50</div>
+        <p class="cash">ou <b>R$ 1.849,00 à vista</b></p>
+        <p class="total">economize R$ 140,00 · total parcelado R$ 1.989,00</p>
+        <!-- BOTÃO WHATSAPP #4 (principal) -->
+        <a class="btn btn-wpp btn-lg js-wpp" href="#"><svg><use href="#i-wpp"/></svg>Garantir minha vaga agora</a>
+        <p class="lock">🔒 Vagas limitadas: a turma fecha com 10 alunos.</p>
+        <p class="anchor">Com poucos serviços de ar-condicionado, o curso se paga. Depois disso, é lucro, cliente fiel e indicação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. FAQ -->
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="center reveal">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2 class="title">Ficou alguma dúvida?</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Preciso ter experiência com ar-condicionado?</summary><p>Não. O curso leva você do zero ao serviço completo. Se você já trabalha com mecânica, vai aproveitar ainda mais rápido.</p></details>
+      <details><summary>O curso é teórico ou prático?</summary><p>100% prático. Você trabalha em bancada e em veículo real, e cada aluno faz o processo completo.</p></details>
+      <details><summary>Recebo certificado?</summary><p>Sim. O certificado de conclusão e a apostila estão inclusos.</p></details>
+      <details><summary>Preciso levar alguma ferramenta ou material?</summary><p>Não. Todo o material do curso é fornecido pelo CTA. É só chegar e aprender.</p></details>
+      <details><summary>Onde é o curso?</summary><p>Na oficina GS.Car (Bosch Car Service): R. Álvaro Mendes, 165, Bom Pastor, Varginha-MG.</p></details>
+      <details><summary>Como faço minha inscrição?</summary><p>Clique em qualquer botão desta página e fale com a gente no WhatsApp. A gente tira suas dúvidas e reserva sua vaga.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 12. CTA FINAL -->
+<section class="final" style="padding-top:96px">
+  <div class="wrap reveal">
+    <div class="final-box">
+      <svg class="gear-deco g1"><use href="#i-gear"/></svg>
+      <svg class="gear-deco g2"><use href="#i-gear"/></svg>
+      <h2>A turma anterior lotou.<br>Esta também vai.</h2>
+      <p>São só 10 vagas por turma. Enquanto você pensa, tem carro parado em alguma oficina esperando alguém que saiba resolver.</p>
+      <p class="q">Que tal esse alguém ser você?</p>
+      <!-- BOTÃO WHATSAPP #5 -->
+      <a class="btn btn-wpp btn-lg js-wpp" href="#"><svg><use href="#i-wpp"/></svg>Quero minha vaga na turma de novembro</a>
+      <p class="tag">CTA GS.Car · Educar é a nossa nova engrenagem.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo-branco.png" alt="CTA GS.Car">
+    <span>R. Álvaro Mendes, 165 · Bom Pastor · Varginha-MG<br>WhatsApp <a class="js-wpp" href="#">(35) 8869-4309</a> · <a href="https://instagram.com/cta_gs.car" target="_blank" rel="noopener">@cta_gs.car</a></span>
+    <span>CTA GS.Car · Centro de Treinamento Automotivo · © <span id="ano"></span></span>
+  </div>
+</footer>
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<a class="wpp-float js-wpp" href="#" aria-label="Falar no WhatsApp"><svg><use href="#i-wpp"/></svg></a>
+
+<script>
+  // ====== WHATSAPP (troque número/mensagem aqui) ======
+  const WHATSAPP = '553588694309';
+  const MENSAGEM = 'Olá! Gostaria de mais informações sobre o curso de Ar-Condicionado Automotivo.';
+  const link = `https://api.whatsapp.com/send?phone=${WHATSAPP}&text=${encodeURIComponent(MENSAGEM)}`;
+  document.querySelectorAll('.js-wpp').forEach(a => { a.href = link; a.target = '_blank'; a.rel = 'noopener'; });
+
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  // ====== CONTAGEM REGRESSIVA (início da turma) ======
+  const INICIO = new Date('2026-11-06T19:00:00-03:00');
+  const box = document.getElementById('count');
+  const pad = n => String(n).padStart(2, '0');
+  function tick() {
+    let s = Math.max(0, Math.floor((INICIO - Date.now()) / 1000));
+    const v = { d: Math.floor(s / 86400), h: Math.floor(s % 86400 / 3600), m: Math.floor(s % 3600 / 60), s: s % 60 };
+    for (const k in v) box.querySelector(`[data-u="${k}"]`).textContent = pad(v[k]);
+  }
+  tick(); setInterval(tick, 1000);
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
